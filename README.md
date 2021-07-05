@@ -18,6 +18,8 @@ Example app listening at http://localhost:3000
 
 ## Setup frontend
 
+In a different terminal window
+
 1. install `http-server` globally - you can run html files on your machine
 
 ```
@@ -25,7 +27,7 @@ npm i http-server -g
 ```
 
 2. `cd front`
-3. `http-server`
+3. `http-server` - this runs the `index.html` file on port `8080`
 
 You should see the following:
 ```
