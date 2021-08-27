@@ -4,8 +4,8 @@ const getData = async (url) => {
     // Request an endpoint.
     const resp = await fetch(url)
 
-    if (!resp.ok()) {
-      throw new Error(`${resp.statusCode}`)
+    if (!resp.ok) {
+      throw new Error(`${url} HTTP error: ${resp.status} - ${resp.statusText}`);
     }
 
     const data = await resp.json()
