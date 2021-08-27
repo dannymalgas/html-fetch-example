@@ -1,14 +1,29 @@
 # Simple Frontend Fetch example
 
-This is a simple example demonstrating how a javascript file, with the help of the `fetch` API, can ping an endpoint and display the returned data on the html page.
+A simple example demonstrating how to Javascript and the browser's built-in `fetch` API to request an endpoint and display the returned data on an HTML page.
 
-## Setup backend
 
-The server is just for a mock end point. I'm assuming you have Node.js installed to run the app (otherwise https://nodejs.org/en/download/)
+## Install system dependencies
 
-1. `cd back`
-2. `npm install`
-3. `npm run start` - this starts the server. 
+Install [Node.js](https://nodejs.org/en/download/).
+
+
+## Set up backend
+
+This backend API server is just for a mock endpoint, so the browser has data to fetch. Note that you could do this without a backend server too - you could request a static JSON file that gets served by the frontend.
+
+1. Go to [back](/back/)
+    ```sh
+    cd back
+    ```
+1. Install packages.
+    ```sh
+    npm install
+    ```
+1. Start the dev server.
+    ```sh
+    npm run start
+    ```
 
 You should see the following: 
 
@@ -16,20 +31,25 @@ You should see the following:
 Example app listening at http://localhost:3000
 ```
 
-## Setup frontend
+## Set up frontend
 
-In a different terminal window
+In a different terminal window:
 
-1. install `http-server` globally - you can run html files on your machine
-
-```
-npm i http-server -g
-```
-
-2. `cd front`
-3. `http-server` - this runs the `index.html` file on port `8080`
+1. Install `http-server` globally - you can run HTML files on your machine
+    ```sh
+    npm i http-server -g
+    ```
+1. Go to [front](/front/).
+    ```sh
+    cd front
+    ```
+3. Start the dev server to serve the [index.html](/front/index.html) file on port `8080`.
+    ```sh
+    http-server
+    ```
 
 You should see the following:
+
 ```
 Starting up http-server, serving ./
 Available on:
@@ -38,18 +58,20 @@ Available on:
 Hit CTRL-C to stop the server
 ```
 
-Go to `http://127.0.0.1:8080` in your browser.
-If you look at the Network tab in your browser's dev tools, you should see the request being sent and the response displaying the data.
+Open http://127.0.0.1:8080 in your browser.
 
-## Some links to check out
+The page will load data from the backend server.
+
+If you look at the _Network_ tab in your browser's dev tools and refresh the page, you should see the request being sent and the response containing the data.
+
+## Resources
+
+Some links to check out.
 
 Docs for streamable data:
 
-Fetch API
-https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+Fetch API - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
-MDN Web Docs - Using readable streams
-https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams  
+MDN Web Docs - Using readable streams - https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams  
 
-Streaming requests with the fetch API
-https://web.dev/fetch-upload-streaming/
+Streaming requests with the fetch API - https://web.dev/fetch-upload-streaming/
