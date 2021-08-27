@@ -43,7 +43,7 @@ In a different terminal window:
     ```sh
     cd front
     ```
-3. Start the dev server to serve the [index.html](/front/index.html) file on port `8080`.
+1. Start the dev server to serve the [index.html](/front/index.html) file on port `8080`.
     ```sh
     http-server
     ```
@@ -70,8 +70,6 @@ Some links to check out.
 
 Docs for streamable data:
 
-Fetch API - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-
-MDN Web Docs - Using readable streams - https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams  
-
-Streaming requests with the fetch API - https://web.dev/fetch-upload-streaming/
+- Fetch API - https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- MDN Web Docs - Using readable streams - https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams  
+- Streaming requests with the fetch API - https://web.dev/fetch-upload-streaming/
