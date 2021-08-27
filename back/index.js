@@ -1,17 +1,18 @@
 const express = require('express')
 const cors = require('cors')
-const app = express()
+
 const port = 3000
 
+const app = express()
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/', (_req, resp) => {
     const data = {
-        message: "Awe World!"
+        message: "Aweh, World!"
     }
-  res.send(data)
+    resp.send(data)
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://localhost:${port}`)
 })
